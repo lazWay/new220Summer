@@ -1,14 +1,15 @@
-function setup() {
-    createCanvas(400, 400);
-}
 
+function setup() {
+    createCanvas(200, 200);
+}
+//2 loops; 1 in the other
 function draw() { 
-      
-         rect(100, 100, 25, 25)
-         rect(125, 125, 25, 25)
-         rect(150, 150, 25, 25)
-         rect(125, 150, 25, 25)
-         rect(100, 150,25,25)
-         rect(100, 125, 25, 25)
-         fill(255, 0, 0)  
+    for(var i = 0; i < 5; i++) {
+        
+    for(var x = 0; x < i ; x++){
+        fill(255, 0, 0)  //color; red
+        rect(25*x, 25*i, 25, 25)
+    }   
+        
       }
+    }
