@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle System</title>
+</head>
+<body>
+    <h2>Battle System</h2>
+    <p>Create a simple, JRPG battle system using two objects: one for an 'enemy' and the other for a 'player'. 
+        Each object should have properties for: attack, hp, and defense. Display both sets of stats on the document.
+
+        Using a button, provide the ability for the player to "attack" the enemy, using this 
+        calculation: enemyHP -= playerAttack - enemyDefense. Have the enemy do the same to the player. 
+        Update the displayed HP on the page after the calculation.</p>
+  
+        <button id= "attack" onclick= "tysonAttack()">Tyson Attack</button>  
+        <button id= "ability" onclick= "tysonAbility()">Tyson Ability</button>
+        <button id= "defend" onmousedown= "tysonHealth()">Tyson Defend</button>
+    
+        <div id= "tysonAttack"></div>
+        <div id= "tysonAbility"></div>
+        <div id= "tysonHealth"></div>
+        
+        <div id = "damage" onclick= "damage()"></div>
+        
+        <button id= "attack" onclick= "holyfieldAttack()">Holyfield Attack</button>  
+        <button id= "ability" onclick= "holyfieldAbility()">Holyfield Ability</button>
+        <button id= "defend" onmousedown= "holyfieldHealth()">Holyfield Health</button>
+
+        <div id= "holyfieldAttack"></div>
+        <div id= "holyfieldAbility"></div>
+        <div id= "holyfielfHealth"></div>
+        
+    <script src="battleSystem.js"></script>
+    
+</body>
+</html>
+

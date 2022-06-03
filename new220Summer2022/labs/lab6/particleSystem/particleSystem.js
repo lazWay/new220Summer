@@ -1,9 +1,10 @@
 class Particle {
     x = Math.random() * 600;
     y = Math.random() * 400;
-    velocityX = 2;
-    velocityY = 2;
-    color = [ Math.random() * 200, 200,50];
+    velocity = { x: 2, y: 2 };
+    //velocityX = 2;
+    // velocityY = 2;
+    color = [ Math.random() * 255, 100, 10 ];
 
     update(){
         noStroke();
@@ -18,14 +19,21 @@ class Particle {
 
 //p5 stuff
 
-    let p = new Particle();
+    
     let particles = [];
+    
+for(var i= 0; i< 5; i++){
+    let p = new Particle();
+    particles.push(p);
 
+}
     function setup(){
-        createCanvas(600, 400);
-
-        for (var i = 0; i < particles.length; i++){
-            particles[i]/update();
-        }
+        createCanvas(600, 400);     
         
+    }
+
+    function draw(){
+        for (var i = 0; i < particles.length; i++){
+            particles[i].update();
+        }
     }

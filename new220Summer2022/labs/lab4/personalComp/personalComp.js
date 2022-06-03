@@ -1,15 +1,17 @@
 var x = [];
+var w = [];
+
 let xPos = 0;
-let xSpeed = 5;
+let xSpeed = 8;
 
     function setup() {
-        createCanvas(1000, 240);
+        createCanvas(3000, 3000);
         noStroke();
-        frameRate(100); // object scrolling rate
-        rect(0, 0, 150, 110); // 
+        frameRate(1000); // object scrolling rate
+        rect(0, 0, 150, 20); // 
         fill(255, 200);
 
-    for (var i = 0; i < 10000; i++) {
+    for (var i = 0; i < 4500; i++) {
         x[i] = random(-800, 100);
  }
 }
@@ -18,10 +20,14 @@ let xSpeed = 5;
         fill(255, 0, 0, 25 );
 
     for (var i = 0; i < x.length; i++) {
-        x[i] += 0.8;
-        var y = i * .019;
-        rect(x[i], y, 12, 12, );
+        x[i] += 1.8;
 
+        //looping through
+        var y = i * .02;
+        for (var top = 0; top < 13; top++){
+            rect(x[i], y+top*180, 12, 12 );
+       } 
+        
         xPos = xPos + xSpeed;
         if (xPos > 100){
             xPos=0;
