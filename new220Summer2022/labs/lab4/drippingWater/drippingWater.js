@@ -17,7 +17,7 @@ function draw(){
 
        for (var i = 0; i < 13; i++) {
         console.log(yDrip[i]);
-        circle(i*30,yDrip[i],dripSize)
+        circle(i*30, yDrip[i], dripSize)
         fill(0,0,dripColor);
         yDrip[i] = yDrip[i] + xSpeed; //moving yDrip 
         if (yDrip[i] > 400){

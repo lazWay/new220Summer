@@ -5,21 +5,26 @@ function setup(){
     createCanvas(800, 400);
     fill(0,102);
     noStroke();
-  
 } 
 
 function draw(){
     background(255);
    
     rect(mouseX, mouseY, 80, 30,);//draw aRect on the screen
+    
     fill(64, 22, 15, )// draw aRect 'brick' color
-        //for (var i = 0; i < 13; i++) {
+
     if (mouseIsPressed === true){ //mouseIsPressed
-        rect(mouseX*i, [i*drop], 80, 30,);
-    }//draw aRect on the screen
+       
+    rect(mouseX,i*[drop], 80, 30,); //brick moving with mousePos
+    }
         while (mouseIsPressed === true){
-            drop*[i] + xSpeed;   
+            for (var i = 0; i < 13; i++) {
+                console.log(drop[i]);
+                circle(i*30,drop[i],dripSize)
+                fill(0,0,dripColor);
+                drop[i] = drop[i] + xSpeed;   
         }; //moving yDrip 
         
 }
-
+}
