@@ -5,12 +5,13 @@ let points = 0;
 
 /*
 function preload(){
-    alien1a = loadImage('img/alien1a.png');
+    alien1a = loadImage('img/alien1a.jpg');
     alien1b = loadImage('img/alien1b.png');
     alien2a = loadImage('img/alien2a.png');
     alien2b = loadImage('img/alien2b.png');
+   
 }
-*/
+ */
 
 function setup () {
     createCanvas(600, 400);
@@ -87,7 +88,7 @@ function draw(){
 
 //Key Handlers
 function keyReleased() {
-    ship.setDir(0);
+    ship.setDir (0);
 }
 
 function keyPressed() {
@@ -96,9 +97,9 @@ function keyPressed() {
         lasers.push(laser);
     }
     if (keyCode === RIGHT_ARROW) {
-        ship.setDir(1);
+        ship.setDir (1);
     } else if (keyCode === LEFT_ARROW) { 
-        ship.setDir(-1);
+        ship.setDir (-1);
     }
 }
 

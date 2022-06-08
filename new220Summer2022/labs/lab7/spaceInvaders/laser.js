@@ -25,4 +25,7 @@ class Laser{
             return false; 
         }
     }
+    remove() {
+        this.toDelete = true; 
+    }
 }
