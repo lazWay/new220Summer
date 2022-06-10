@@ -3,7 +3,7 @@ let aliens = []; // alien array
 let lasers = []; // laser array
 let points = 0;
 
-/*
+
 function preload(){
     alien1a = loadImage('img/alien1a.jpg');
     alien1b = loadImage('img/alien1b.png');
@@ -11,7 +11,7 @@ function preload(){
     alien2b = loadImage('img/alien2b.png');
    
 }
- */
+ 
 
 function setup () {
     createCanvas(600, 400);

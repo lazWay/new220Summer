@@ -1,4 +1,4 @@
-class alienShip {
+class Ship {
     constructor(){
         this.x = width / 2;
         this.y = height - 10;
