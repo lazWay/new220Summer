@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+</head>
+<style> div
+    {
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+        float: left;
+        margin: 5px;
+    }
+    </style>
+<body>
+    <h2>colorChanger</h2>
+    
+    <p>Create an application with three grey, square divs, in a row. They should be 200px by 200px, and all floated left. Give them a margin of 5px. </p>
+
+    <p> Using only one event handler, write event listeners to respond to a click on each element. Each element should change to a different color: </p> 
+        
+    <p>  one red, one green, and one blue. Use a data attribute on the elements to store the color to be changed to.</p>
+
+    <div id="one" data-color="red" onclick="fun(this)"></div>
+    <div id="two" data-color="green" onclick="fun(this)"></div>
+    <div id="three" data-color="blue" onclick="fun(this)"></div>
+
+    <script src="colorChanger.js"></script>
+</body>
+</html>

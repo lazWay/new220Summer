@@ -29,14 +29,15 @@ function draw(){
         if(rectX > width) {
             rectX = -rectW; 
         }
-        //new Xpos
-    rectX += rectXSpeed; 
+      
+        // for collision 
+    function collideRect(cirX, cirY, rectX, rectY, rectW, rectH){ 
+          
+    rectX += rectXSpeed; //new Xpos
     if(collideRect( cirX, cirY, rectX, rectY, rectH)) cirYSpeed = -cirYSpeed; // create collideRect fn
-
-    function collideRect(cirX,cirY,rectX,rectY, rectW, rectH){
         if (cirY + cirR > rectY && cirY + cirR < rectY + rectH) { // if cY & cR are on the same axis, 
             return true;
-        if (cirX - cirR > rectX && cirX - cirR < rectX + rectW) {
+        if (cirX - cirR > rectX && cirX - cirR < rectX + rectW) { // if cX & cR are on the same axis,
             return false;
         }
         }
