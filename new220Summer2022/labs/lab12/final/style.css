@@ -1,0 +1,55 @@
+.cardDeck {
+
+    width: 50%;
+    
+    background: #716F71;
+    
+    padding: 1rem;
+    
+    border-radius: 4px;
+    
+    box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+    
+    display: grid;
+    
+    grid-template-columns: auto auto auto auto;
+    
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    align-items: center;
+    
+    margin: 0 0 3em;
+    
+    }
+    
+    .cardDeck .card {
+    
+    height: 8.7rem;
+    
+    width: 8.7rem;
+    
+    margin: 0.2rem 0.2rem;
+    
+    background: #141214;;
+    
+    font-size:64px;
+    
+    line-height: 124px;
+    
+    text-align: center;
+    
+    color: #ffffff;
+    
+    border-radius: 5px;
+    
+    cursor: pointer;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    
+    }
