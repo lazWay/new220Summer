@@ -32,12 +32,12 @@
 
      // If no bad word then print the message inside the 'p' element
      if (count == 0) {
-         document.querySelector(".message").innerHTML = "No bad word found";
+         document.getElementById("message").innerHTML = "No bad words ";
      }
 
      // If bad word is present print the message inside the 'p' element and the count
      else {
-         document.querySelector(".message").innerHTML = "Bad word found<br>Total bad words : " + count;
+         document.getElementById("message").innerHTML = "Bad word found<br>Total bad words : " + count;
      }
 
      // Resetting the input field to empty
